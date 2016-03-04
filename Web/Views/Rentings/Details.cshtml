@@ -1,0 +1,58 @@
+﻿@model Domain.Renting
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Renting</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Inventory.InventoryId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Inventory.InventoryId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.User.Username)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Username)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RentValue)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RentValue)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Beginning)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Beginning)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.End)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.End)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.RentingId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
